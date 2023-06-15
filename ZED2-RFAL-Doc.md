@@ -2,7 +2,7 @@
 
 Stereo camera designed for robotics applications - to be used as a part of the BlueROV underwater vehicle. Using USB 3.0. The technology is entirely passive (no IR lighting or Time of flight)
 
-##### ZED SDK - ROS Integration
+### ZED SDK - ROS Integration
 
 **Running the ZED ROS Node**
 
@@ -68,7 +68,6 @@ After process done with ROS middleware with the host computer, the below topics 
     - `left_raw/image_raw_gray`: Left camera grayscale unrectified image
     - `left/camera_info`: Left camera calibration data
     - `left_raw/camera_info`: Left unrectified camera calibration data
-    - 
 - Right camera
     - `right/image_rect_color`: Color rectified right image
     - `right_raw/image_raw_color`: Color unrectified right image
@@ -76,7 +75,6 @@ After process done with ROS middleware with the host computer, the below topics 
     - `right_raw/image_raw_gray`: Grayscale unrectified right image
     - `right/camera_info`: Right camera calibration data
     - `right_raw/camera_info`: Right unrectified camera calibration data
-    - 
 - Stereo pair
     - `stereo/image_rect_color`: stereo rectified pair images side-by-side
     - `stereo_raw/image_raw_color`: stereo unrectified pair images side-by-side
@@ -139,7 +137,7 @@ const sl_oc::sensors::data::Temperature tempData = sens.getLastCameraTemperature
 [Open Capture API GitHub Repo](https://github.com/stereolabs/zed-open-capture)
 [Open Capture API Docs](https://stereolabs.github.io/zed-open-capture/)
 
-##### Calibration
+### Calibration
 
 **Camera Calibration Parameters through API**
 
@@ -167,7 +165,7 @@ Lens distortion - k1, k2, k3, p1, p2
 Horizontal, vertical, and diagonal FOV
 Stereo calibration: rotation and translation between left and right eye
 
-[Source - SDK Overview > Camera Calibration]
+[Source - SDK Overview > Camera Calibration](https://www.stereolabs.com/docs/video/camera-calibration/)
 
 **Underwater Calibration** 
 
@@ -180,14 +178,22 @@ Stereo calibration: rotation and translation between left and right eye
 
 ---
 
-##### Links and References
+### Links and References
 
 [SDK Overview > Camera Calibration](https://www.stereolabs.com/docs/video/camera-calibration/)
+
 [Integrations > ROS > Getting Started](https://www.stereolabs.com/docs/ros/)
+
 [Integrations > ROS > ZED Node](https://www.stereolabs.com/docs/ros/zed-node/)
 
+
+
 [Stereolabs Support, Using ZED Underwater](https://support.stereolabs.com/hc/en-us/articles/4402812389399-Can-I-use-the-ZED-camera-underwater-)
+
 [Stereolabs Medium, Spatial Mapping in Computer vision using ZED.](https://stereolabs.medium.com/spatial-mapping-in-computer-vision-using-zed-69bce43c2e7a)
 
+
+
 [Open Capture API GitHub Repo](https://github.com/stereolabs/zed-open-capture)
+
 [Open Capture API Docs](https://stereolabs.github.io/zed-open-capture/)
