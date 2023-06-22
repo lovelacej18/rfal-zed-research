@@ -1,0 +1,36 @@
+$ rosbag info malc_10hz_gray_pipe_00_0.bag 
+path:        malc_10hz_gray_pipe_00_0.bag
+version:     2.0
+duration:    45.8s
+start:       Jul 14 2013 06:04:46.25 (1373796286.25)
+end:         Jul 14 2013 06:05:32.03 (1373796332.03)
+size:        800.2 MB
+messages:    2884
+compression: none [910/910 chunks]
+types:       maris_arduino_controller/ArduinoStatus [4634a392052b3a9aca2209055732c42c]
+             sensor_msgs/CameraInfo                 [c9a58c1b0b154e0e6da7578cb991d214]
+             sensor_msgs/Image                      [060021388200f6f0f447d0fcd9c64743]
+topics:      /bslmaris/L_left/camera_info    302 msgs    : sensor_msgs/CameraInfo                
+             /bslmaris/L_right/camera_info   303 msgs    : sensor_msgs/CameraInfo                
+             /bslmaris/M_left/camera_info    303 msgs    : sensor_msgs/CameraInfo                
+             /bslmaris/M_right/camera_info   302 msgs    : sensor_msgs/CameraInfo                
+             /bslmaris/S_left/camera_info    303 msgs    : sensor_msgs/CameraInfo                
+             /bslmaris/S_right/camera_info   303 msgs    : sensor_msgs/CameraInfo                
+             /bslmaris/arduino/output        159 msgs    : maris_arduino_controller/ArduinoStatus
+             /bslmaris/central_image_raw     303 msgs    : sensor_msgs/Image                     
+             /bslmaris/left_image_raw        303 msgs    : sensor_msgs/Image                     
+             /bslmaris/right_image_raw       303 msgs    : sensor_msgs/Image
+rfal@rfal-Precision-3541:~/Downloads$ rosbag play malc_10hz_gray_pipe_00_0.bag 
+
+
+...
+
+$ rosbag play malc_10hz_gray_pipe_00_0.bag 
+[ INFO] [1687455643.699016226]: Opening malc_10hz_gray_pipe_00_0.bag
+
+Waiting 0.2 seconds after advertising topics... done.
+
+Hit space to toggle paused, or 's' to step.
+ [RUNNING]  Bag Time: 1373796332.033368   Duration: 45.784274 / 45.785059               
+Done.
+
